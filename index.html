@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/Home.css">
+    <link rel="stylesheet" href="assets/css/Login - SignUp/Login.css">
+    <link rel="stylesheet" href="assets/css/Header - Footer - css/Header.css">
+    <link rel="stylesheet" href="assets/css/Header - Footer - css/Footer.css">
+    <!-- fontawesome cnd -->
+    <script src="https://kit.fontawesome.com/2e4a6d166a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Braingomo</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <div class="top-header"></div>
+            <div class="bottom-header">
+
+                <div class="logo-header">
+                    <a href="#"><img class="logo-header-1" src="assets/Images/Home/Component logo.png" alt=""></a>
+
+                    <a href="index.html"><img class="logo-header-2" src="assets/Images/Home/Property 1=Group 263.png"
+                            alt=""></a>
+                </div>
+
+                <div class="menu">
+                    <ul class="menu-ul">
+                        <li><a href="Neuro-Headsets.html">Neuro-Headsets</a></li>
+                        <li><a href="App&Games.html">App & Games</a></li>
+
+                        <li class="btn-serv">Services
+                            <i class="fa-solid fa-chevron-down chevron-down chevron-down-1"></i>
+                        </li>
+                        <ul class="serv-menu" style="display: none;">
+                            <li><a href="Clinical-Partners.html">Clinical partners</a></li>
+                            <li><a href="Web-server.html">Web server</a></li>
+                        </ul>
+
+                        <li class="btn-how">How it works
+                            <i class="fa-solid fa-chevron-down chevron-down chevron-down-2"></i>
+                        </li>
+                        <ul class="how-menu" style="display: none;">
+                            <li><a href="At-Home.html">At Home</a></li>
+                            <li><a href="In-Clinics.html">In Clinics</a></li>
+                        </ul>
+
+                    </ul>
+                </div>
+
+                <div class="profile">
+                    <a href="#" class="Profile-btn-1">Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-header-mobile">
+
+            <div class="top-header-mobile">
+            </div>
+
+            <div class="bootom-header-mobile">
+                <div class="icon-show-menu">
+                    <i class="fa-solid fa-bars bar-header"></i>
+                    <i class="fa-sharp fa-solid fa-xmark x-mark-header" style="display: none;"></i>
+                </div>
+                <div class="logo-header-mobile">
+                    <a href="index.html"><img src="assets/Images/Home/Component logo.png" alt=""></a>
+                </div>
+                <a href="#" class="Profile-btn-2">
+                    <i class="fa-solid fa-user user-header"></i>
+                    <i class="fa-solid fa-xmark cancel-2" style="display: none;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-menu-header-mobile">
+
+            <div class="top-menu-mobile">
+                <ul class="menu-mobile-ul">
+                    <li><a href="Neuro-Headsets.html">Neuro-Headset </a></li>
+                    <li><a href="App&Games.html">App & Game </a></li>
+
+                    <li class="btn-serv-mobile">Services
+                        <i class="fa-solid fa-chevron-down chevron-down chevron-down-1-mobile "></i>
+                    </li>
+                    <ul class="serv-menu-mobile" style="display: none;">
+                        <li><a href="Web-server.html">Web server</a></li>
+                        <li><a href="Clinical-Partners.html">Clinical partners</a></li>
+                    </ul>
+
+                    <li class="btn-how-mobile">How it works
+                        <i class="fa-solid fa-chevron-down chevron-down chevron-down-2-mobile"></i>
+                    </li>
+                    <ul class="how-menu-mobile" style="display: none;">
+                        <li><a href="At-Home.html">At Home</a></li>
+                        <li><a href="In-Clinics.html">In Clinics</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="bottom-menu-mobile">
+
+                <h3 class="menu-mobile-h3-dont-have">Don’t have a webserver profile?</h3>
+
+                <a href="" class="menu-mobile-btn-Create-Medical-Profile">
+                    Create Medical Profile
+                </a>
+
+                <a href="Web-server.html" class="menu-mobile-Know-More">Know More</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="container-login" style="display: none;">
+        <div class="container-login-left">
+            <h3>
+                <span class="container-login-left-txt-yellow">Brain Go</span>es <span
+                    class="container-login-left-txt-yellow">Mo</span>bile <br>
+                anywhere, anytime
+            </h3>
+        </div>
+        <div class="container-login-right">
+
+            <i class="fa-solid fa-xmark cancel-1 cancel-login-form" style="display: none;"></i>
+
+            <div class="logo-container-login-right">
+                <img class="logo-header-1" src="assets/Images/Home/Component logo.png" alt="">
+
+                <img class="logo-header-2" src="assets/Images/Home/Property 1=Group 263.png" alt="">
+            </div>
+
+            <div class="container-login-right-secs-btns">
+                <p class="Wellness-btn" style="border-bottom: 7px solid var(--color-Ellipse-20);">Wellness</p>
+                <p class="Medical-btn">Medical</p>
+            </div>
+
+            <form class="login-form-Wellness" action="">
+
+                <label class="login-Wellness-email-label" for="login-Wellness-email">E-mail</label>
+                <input class="login-Wellness-email" type="email" name="login-Wellness-email">
+
+                <label class="login-Wellness-password-label" for="login-Wellness-password">Password</label>
+                <input class="login-Wellness-password" type="password" name="login-Wellness-password">
+
+                <div class="back-checkBox">
+                    <input class="login-Wellness-checkbox" type="checkbox" name="login-Wellness-checkbox">
+                    <label class="login-Wellness-checkbox-label" for="login-Wellness-checkbox">Keep me signed
+                        in.</label>
+                </div>
+
+                <input class="login-form-Wellness-submit" type="submit" value="Log in">
+            </form>
+
+            <form class="login-form-Medical" action="" style="display: none;">
+
+                <label class="login-Medical-email-label" for="login-Medical-email">E-mail</label>
+                <input class="login-Medical-email" type="email" name="login-Medical-email">
+
+                <label class="login-Medical-password-label" for="login-Medical-password">Password</label>
+                <input class="login-Medical-password" type="password" name="login-Medical-password">
+
+                <div class="back-checkBox">
+                    <input class="login-Medical-checkbox" type="checkbox" name="login-Medical-checkbox">
+                    <label class="login-Medical-checkbox-label" for="login-Medical-checkbox">Keep me signed in.</label>
+                </div>
+
+                <input class="login-form-Medical-submit" type="submit" value="Log in">
+            </form>
+
+            <div class="Dont-have-a-profile--sec" style="display: none;">
+                <p>Don’t have a profile?</p>
+                <a class="Sign-up-btn" href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container-main">
+
+            <div class="Neuro-back-img-1">
+                <span class="Neuro-img-11"></span>
+
+                <img class="Neuro-img-1" src="assets/Images/Home/Mask group22.png" alt="">
+            </div>
+
+            <div class="container-main-1">
+                <div class="container-main-1-left">
+                    <h1>Brain Training<br>and Monitoring</h1>
+
+                    <p>With The Braingomo mobile EEG platform:</p>
+
+                    <div class="container-main-1-left-p">
+                        <img class="check-img" src="assets/Images/Home/check.png" alt="">
+                        <p>Do brain training with the games in “The App”</p>
+                    </div>
+
+                    <div class="container-main-1-left-p">
+                        <img class="check-img" src="assets/Images/Home/check.png" alt="">
+                        <p>Monitor your patients with your “Web Server Profile”</p>
+                    </div>
+
+                    <a class="container-main-1-left-Download" href="#">Download the App</a>
+                </div>
+
+                <div class="container-main-1-right">
+                    <img src="assets/Images/Home/hero images.png" alt="">
+                </div>
+
+            </div>
+            <div class="container-main-Top-icons">
+                <div class="sec-1-bottom">
+                    <div class="sec-1-bottom-1">
+                        <img class="sec-1-bottom-1-icon" src="assets/Images/Home/Group 327.png" alt="">
+                        <p class="sec-1-bottom-1-text">Top-notch<br>technological set-up</p>
+                    </div>
+                    <div class="sec-1-bottom-2">
+                        <img class="sec-1-bottom-1-icon" src="assets/Images/Home/Group 319.png" alt="">
+                        <p class="sec-1-bottom-1-text">Remote brain<br>monitoring and training</p>
+                    </div>
+                    <div class="sec-1-bottom-3">
+                        <img class="sec-1-bottom-1-icon" src="assets/Images/Home/Group 318.png" alt="">
+                        <p class="sec-1-bottom-1-text">Simplistic design for<br>maximum ease-of-use</p>
+                    </div>
+                    <div class="sec-1-bottom-4">
+                        <img class="sec-1-bottom-1-icon" src="assets/Images/Home/Group 317.png" alt="">
+                        <p class="sec-1-bottom-1-text">high-quality<br>brain data</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-main-Multi">
+                <section class="back-sec-2-3-4">
+                    <div class="back-sec-2-3">
+                        <div class="sec-2-main">
+                            <h3>Braingomo Neurofeedback App and Web-Server</h3>
+
+                            <p>The innovative smartphone-based Braingomo-neurofeedback platform, combines our smartphone
+                                app and webserver.</p>
+                            <p><span>The application</span> feeds the brain data into the training <span>games</span>
+                                and provides direct and real-time feedback.</p>
+                            <p>The web server serves as a powerful tool for clinicians to monitor the progress of their
+                                patients only by creating a <span>profile</span>. </p>
+                            <img class="img1" src="assets/Images/Home/Group 490.png" alt="">
+                            <div class="btns-sec-2-main">
+                                <a class="btns-sec-2-main-creat" href="#">Create a Profile</a>
+                                <a class="btns-sec-2-main-download" href="#">Download the app</a>
+                            </div>
+
+                        </div>
+                        <div class="sec-3-main">
+                            <h3>Braingomo Neuro-Headset</h3>
+                            <p>Our self-designed headset is based on innovative dry electrodes and combined with our
+                                versatile smartphone and web applications.</p>
+                            <p>Whether you are a patient suffering from epilepsy or a researcher looking to study brain
+                                activity, our headset offers you the precision and accuracy you need.
+                            </p>
+                            <img class="img2" src="assets/Images/Home/neuro headset.png" alt="">
+                            <img class="Coming-soon" src="assets/Images/Home/Coming soon....png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="sec-4-main">
+
+                        <img class="sec-4-main-Neuro-back-img-2" src="assets/Images/Home/Mask group11.png" alt="">
+                        <span class="sec-4-main-Neuro-back-img-22"></span>
+
+                        <img class="sec-4-main-double-img" src="assets/Images/Home/Group 495.png" alt="">
+
+                    </div>
+
+                </section>
+            </div>
+            <div class="container-main-5">
+                <div class="sec-5-main">
+                    <div class="sec-5-main-left">
+                        <h3>No Braingomo Neuro-Headset?</h3>
+                        <p>If you already have a system from <a href="#" class="span-p1">Muse, Mentalab</a> or <a href="#"
+                                class="span-p1">Plux Biosignals</a>, you can use one of those to play neurofeedback
+                            games in our app and measure your brain activities.</p>
+                        <p>If not, you can <a href="#" class="span-p2">order</a> or <a href="#" class="span-p2">rent</a>
+                            one of these wireless EEG systems to be used with our app.</p>
+
+                        <div class="btns-sec-5-main-left">
+                            <a href="Neuro-Headsets.html" class="btns-sec-5-main-left-DoIt">Do it now</a>
+                            <a href="Neuro-Headsets.html" class="btns-sec-5-main-left-Next" style="display: none;">Next</a>
+                        </div>
+                    </div>
+                    <div class="sec-5-main-right">
+                        <div class="sec-5-main-right-pics">
+                            <div class="sec-5-main-right-pics-111">
+                                <div class="sec-5-main-right-pic-1">
+                                    <img src="assets/Images/Home/muse card.png" alt="">
+                                    <h3>Muse Headband</h3>
+                                </div>
+                                <div class="sec-5-main-right-pic-2" style="display: none;">
+                                    <img src="assets/Images/Home/muse card2.png" alt="">
+                                    <h3>Mentalab EEG Device</h3>
+                                </div>
+                                <div class="sec-5-main-right-pic-3" style="display: none;">
+                                    <img src="assets/Images/Home/muse card3.png" alt="">
+                                    <h3>Plux Biosignals Kit</h3>
+                                </div>
+                            </div>
+                            <div class="sec-5-main-right-pics-222">
+                                <img class="sec-5-main-right-pics-222--1" src="assets/Images/Home/Group 496.png" alt="">
+                                <img class="sec-5-main-right-pics-222--2" src="assets/Images/Home/Group 497.png" alt="">
+                                <img class="sec-5-main-right-pics-222--3" src="assets/Images/Home/Group 498.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="sec-5-main-right-circle">
+                            <i class="fa-solid fa-circle circle-1" style="color: var(--color-Ellipse-22);"></i>
+                            <i class="fa-solid fa-circle circle-2"></i>
+                            <i class="fa-solid fa-circle circle-3"></i>
+                        </div>
+                        <a href="#" class="get">Get Start</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-main-6">
+                <div class="container-main-top">
+                    <h3>What Makes Us Unique?</h3>
+                </div>
+                <div class="container-main-bottom">
+                    <div class="container-main-6-bottom-1">
+                        <img src="assets/Images/Home/app.png" alt="">
+                        <p>Smartphone App</p>
+                    </div>
+                    <div class="container-main-6-bottom-2">
+                        <img src="assets/Images/Home/games-ill.png" alt="">
+                        <p>Brain Training Games</p>
+                    </div>
+                    <div class="container-main-6-bottom-3">
+                        <img src="assets/Images/Home/webserver-ill.png" alt="">
+                        <p>Interactive Web Server</p>
+                    </div>
+                    <div class="container-main-6-bottom-4">
+                        <img src="assets/Images/Home/partner-ill.png" alt="">
+                        <p>Clinical Partners</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-main-7">
+                <div class="container-main-7-left">
+                    <img src="assets/Images/Home/Vector.png" alt="">
+
+                    <h3>The best recommend Braingomo:</h3>
+
+                    <p>sit amet consectetur jdgsfhjksl consequat tristique sacsfsg. </p>
+                    <p>Porttitor consequat tristique suspendisse iaculis iaculiszdcfdg.</p>
+
+                    <a class="container-main-7-left-view-more" href="best-recommend.html">View More</a>
+                </div>
+                <div class="container-main-7-right">
+
+                    <div class="container-main-7-right-photo">
+
+                        <img class="container-main-7-right-photo-1" src="assets/Images/Home/Group 469.png" alt="">
+                        <img class="container-main-7-right-photo-2" src="assets/Images/Home/Group 470.png" alt="">
+
+                    </div>
+
+                    <div class="container-main-7-right-circles">
+
+                        <i class="fa-solid fa-circle circle-11" style="color: var(--color-Ellipse-22);"></i>
+
+                        <i class="fa-solid fa-circle circle-22"></i>
+
+                    </div>
+                    <a href="#" class="view">View More</a>
+                </div>
+            </div>
+            <div class="container-main-8">
+
+                <div class="container-main-8-top">
+                    <h3>They believe in us</h3>
+                </div>
+
+                <div class="container-main-8-bottom">
+
+                    <img class="container-main-8-img-1"
+                        src="assets/Images/Home/universitaetsklinikum-muenster-ukm-logo-vector 1.png" alt="">
+
+                    <img class="container-main-8-img-2" src="assets/Images/Home/j8gzfUfu_400x400_prev_ui 1.png" alt="">
+
+                    <img class="container-main-8-img-3" src="assets/Images/Home/Screenshot 2023-01-09 174652 1.png" alt="">
+
+                    <img class="container-main-8-img-4" src="assets/Images/Home/novel-t-logo-vector-xs 1.png" alt="">
+
+                    <img class="container-main-8-img-5" src="assets/Images/Home/Group 342.png" alt="">
+
+                    <img class="container-main-8-img-6" src="assets/Images/Home/Group 63.png" alt="">
+
+                    <img class="container-main-8-img-7"
+                        src="assets/Images/Home/landschaftsverband-westfalen-lippe-lwl-logo-vector 1.png" alt="">
+
+                    <img class="container-main-8-img-8" src="assets/Images/Home/Logo-Stiftung 1.png" alt="">
+
+                </div>
+
+            </div>
+            <div class="container-main-9">
+                <div class="container-main-9-main-left">
+
+                    <h3>Get in touch</h3>
+
+                    <form class="container-main-9-main-left-form" action="">
+
+                        <label class="container-main-9-main-left-name-lable"
+                            for="container-main-9-main-left-inputs-name">
+                            Name
+                        </label>
+                        <input class="container-main-9-main-left-inputs-name" type="text">
+
+                        <label class="container-main-9-main-left-email-lable"
+                            for="container-main-9-main-left-inputs-email">
+                            E-mail
+                        </label>
+                        <input class="container-main-9-main-left-inputs-email" type="email">
+
+                        <label class="container-main-9-main-left-inputs-textarea-lable"
+                            for="container-main-9-main-left-textarea">Write your question...</label>
+                        <textarea class="container-main-9-main-left-inputs-textarea" name="" id=""></textarea>
+
+                        <input class="container-main-9-main-left-form-submit" type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="container-main-9-main-right">
+                    <img src="assets/Images/Home/getintouch-ill.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-Cookies-back">
+            <div class="container-Cookies">
+                <div class="container-Cookies-left">
+                    <p>When you visit our website, we may use cookies to personalize your browsing experience and analyze your behavior on the website to improve its performance.</p>
+                </div>
+                <div class="container-Cookies-right">
+                    <button class="btn-I-Agree-Cookies">I Agree</button>
+                    <a href="Privacy policy of cookies.html">I need to see Privacy Policy first!</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="top-footer">
+                <div class="footer-1-sec">
+                    <div class="logo-footer">
+                        <a href="index.html"><img class="logo-footer-1" src="assets/Images/Home/Component logo.png" alt=""></a>
+
+                        <a href="index.html"><img class="logo-footer-2" src="assets/Images/Home/Property 1=Group 263.png" alt=""></a>
+                    </div>
+                    <div class="social-footer">
+                        <a href="#" class="linkedin-soc"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="email-soc"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#" class="twitter-soc"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-2-sec">
+                    <h3>Company</h3>
+                    <p><a href="Company.html">Impressum</a></p>
+                    <p><a href="Company.html">About us</a></p>
+                    <p><a href="Company.html">Services</a></p>
+                </div>
+                <div class="footer-3-sec">
+                    <h3>Policy</h3>
+                    <p><a href="Policy.html">FAQ</a></p>
+                    <p><a href="Policy.html">Shopping</a></p>
+                </div>
+                <div class="footer-4-sec">
+                    <h3>Contact</h3>
+                    <p>(+49) 245 6546</p>
+                    <p>Braingomo@gmail.com</p>
+                </div>
+                <div class="footer-5-sec">
+                    <h3 class="footer-5-sec-h3">Apply for our newsletter</h3>
+                    <form class="footer-form">
+                        <label class="footer-email-lable" for="email-Apply-for-our-newsletter">
+                            Enter your E-mail
+                            <span class="footer-email-lable-span">for our newsletter</span>
+                        </label>
+                        <input type="email" name="email-Apply-for-our-newsletter" class="footer-email-input">
+                        <input class="footer-email-submit" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <a class="footer-Terms" href="Privacy.html">Terms <span class="footer-Conditions"> & Conditions</span></a>
+                <a class="footer-Lice" href="Privacy.html">License</a>
+                <a class="footer-Pri" href="Privacy.html">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/Header.js"></script>
+    <script src="assets/js/Login.js"></script>
+    <script src="assets/js/Home-slider.js"></script>
+    <script src="assets/js/Home-position.js"></script>
+    <script src="assets/js/Home-cardSlider.js"></script>
+</body>
+
+</html>
