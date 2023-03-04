@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+:root {
+    --color-Ellipse-24: #EDD008;
+    --color-Ellipse-18: #10CC9C;
+    --color-Ellipse-19: #00B2A0;
+    --color-Ellipse-20: #00979B;
+    --color-Ellipse-21: #007B8C;
+    --color-Ellipse-22: #216175;
+    --color-Ellipse-23: #2F4858;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* section 1 */
+
+.container-main-1 {
+    width: 100%;
+    position: relative;
+    display: grid;
+    background-image: url('../Images/Neuro-Headsets/Rectangle 39467.png');
+    background-repeat: no-repeat;
+    padding-left: 7%;
+    padding-right: 10%;
+    grid-template-rows: repeat(auto, auto);
+    grid-template-areas:
+        "fm am"
+        "fm bm"
+        "fm cm"
+        "fm dm"
+        "fm em"
+    ;
+}
+
+.container-main-1-0 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container-main-1-1 {
+    grid-area: am;
+    margin-top: 20%;
+    margin-bottom: 28px;
+}
+
+.container-main-1-1 h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container-main-1-2 {
+    grid-area: bm;
+    margin-bottom: 24px;
+}
+
+.container-main-1-2 p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.container-main-1-3 {
+    grid-area: cm;
+    margin-bottom: 24px;
+}
+
+.container-main-1-4 {
+    grid-area: dm;
+    margin-bottom: 67px;
+}
+
+.container-main-1-5 {
+    grid-area: em;
+    margin-bottom: 28px;
+}
+
+.container-main-1-5 a {
+    font-size: 16px;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.container-main-1-5 a span {
+    font-weight: 600;
+}
+
+.container-main-1-6 {
+    grid-area: fm;
+    position: relative;
+    margin-top: 10%;
+    margin-right: 12vw;
+}
+
+.container-main-1-6-img-2 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+}
+
+/* section 2 */
+
+.container-main-2 {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.container-main-2-top h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container-main-2-bottom {
+    display: flex;
+    column-gap: 5vw;
+}
+
+.container-main-2-bottom-1,
+.container-main-2-bottom-2,
+.container-main-2-bottom-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main-2-bottom-1 p,
+.container-main-2-bottom-2 p,
+.container-main-2-bottom-3 p {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: center;
+}
+
+/* section 3 */
+
+.container-main-3 {
+    width: 80%;
+    background-image: url('../Images/Neuro-Headsets/Rectangle 39467.png');
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: repeat(auto, auto);
+    grid-template-areas:
+        "amm fmm"
+        "bmm fmm"
+        "cmm fmm"
+        "dmm fmm"
+        "emm fmm"
+    ;
+    overflow: hidden;
+
+    margin-bottom: 120px;
+}
+
+.container-main-3-1 {
+    grid-area: amm;
+
+    margin-top: 4.5%;
+    margin-left: 10%;
+}
+
+.container-main-3-1 h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container-main-3-2 {
+    grid-area: bmm;
+
+    margin-left: 10%;
+}
+
+.container-main-3-2 p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container-main-3-3 {
+    grid-area: cmm;
+    display: flex;
+    column-gap: 20px;
+
+    margin-left: 10%;
+}
+
+.container-main-3-4 {
+    grid-area: dmm;
+
+    margin-left: 10%;
+}
+
+.container-main-3-5 {
+    grid-area: emm;
+
+    margin-left: 10%;
+}
+
+.container-main-3-6 {
+    grid-area: fmm;
+}
+
+.container-main-3-6 img {
+    margin-top: 86px;
+}
+
+/* section 4 */
+
+.container-main-4 {
+    width: 80%;
+
+    margin-bottom: 120px;
+}
+
+.container-main-4-1 {
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 28px;
+}
+
+.container-main-4-2 {
+    width: 75%;
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+.container-main-4-3 {
+    width: 75%;
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 37px;
+}
+
+.container-main-4-3 a {
+    color: var(--color-Ellipse-20);
+    text-decoration: underline;
+}
+
+.container-main-4-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-main-4-4--box {
+    width: 31.3%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px 3px rgba(126, 126, 126, 0.233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main-4-4--box img {
+    width: 100%;
+}
+
+.container-main-4-4--box-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.container-main-4-4--box-bottom h3 {
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.container-main-4-4--box-bottom p {
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-bottom: 37px;
+}
+
+.container-main-4-4--box-bottom p a {
+    color: var(--color-Ellipse-20);
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.container-main-4-4--box-bottom .a-1 {
+    width: 100%;
+    height: 33px;
+    color: var(--color-Ellipse-20);
+    border: 3px solid var(--color-Ellipse-20);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+
+    margin-bottom: 14px;
+}
+
+.container-main-4-4--box-bottom .a-1:hover {
+    background-color: var(--color-Ellipse-20);
+    color: white;
+}
+
+.container-main-4-4--box-bottom .a-2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-Ellipse-20);
+
+    margin-bottom: 14px;
+}
+.displayblock{
+    display: none;
+}
+
+.container-main-4-4--box-bottom .a-2:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1270px) {
+    .container-main-1-0 img {
+        width: 33vw;
+    }
+
+    .container-main-1-1 h3 {
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+
+    .container-main-1-2 p {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+
+    .container-main-1-3 img {
+        width: 30vw;
+    }
+
+    .container-main-1-4 img {
+        width: 15vw;
+    }
+
+    .container-main-1-5 a {
+        font-size: 1.5vw;
+    }
+
+    .container-main-1-6 {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-main-1-6-img-1 {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .container-main-2-top h3 {
+        font-size: 2vw;
+    }
+
+    .container-main-2-bottom-1 img,
+    .container-main-2-bottom-2 img,
+    .container-main-2-bottom-3 img {
+        width: 29vw;
+    }
+
+    .container-main-2-bottom-1 p,
+    .container-main-2-bottom-2 p,
+    .container-main-2-bottom-3 p {
+        font-size: 1.5vw;
+        width: auto;
+    }
+
+
+}
+
+@media (max-width:850px) {
+    .container-main-2-bottom {
+        column-gap: 0;
+    }
+    .displaynone{
+        display: none;
+    }
+    .displayblock{
+        display: block;
+    }
+    .displayblock img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .container-main-3 {
+        display: grid;
+        grid-template-rows: repeat(auto, auto);
+        grid-template-areas:
+            "amm "
+            "bmm "
+            "fmm "
+            "cmm "
+        ;
+    }
+    .container-main-3-1 h3 {
+        font-size: 24px;
+        height: 81px;
+        
+    }    
+    .container-main-3-4 {
+        display: none;
+    }
+    .container-main-3-2 p {
+        margin-right: 10%;
+    }
+    .container-main-3-3 {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .container-main-3-5 {
+        display: none;
+    }
+    .container-main-3-6 img {
+        margin-top: 86px;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+    .container-main-3{
+        background-size: 2000px;
+    }
+    
+}
+@media (max-width:501px) {
+    .container-main-1{
+        text-align: center;
+    }
+    .container-main-1-1 {
+        grid-area: am;
+        margin-top: 10%;
+        margin-bottom: 0;
+    }    
+    .container-main-1{
+        background-size: 2000px;
+    }
+    
+    .container-main-1-0{
+        display: none;
+    }
+    .container-main-1 {
+        display: grid;
+        grid-template-rows: repeat(auto, auto);
+        grid-template-areas:
+            "am"
+            "fm"
+            "dm" 
+            "bm"            
+            "cm"
+            ;
+    }
+    .container-main-1-1 h3 {
+        font-size: 24px;
+        white-space: nowrap;
+    }  
+    .container-main-1-2 p {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: left;
+    }
+    .container-main-3{
+        width: 100%;
+    }
+    .container-main-1-3 img {
+        width: 100%;
+    }    
+    .container-main-1-4 img {
+        width: 35%;
+    }
+    .container-main-1-5 {
+        display: none;
+    }
+    .container-main-1-6-img-2,
+    .container-main-1-6-img-1 {
+        margin-left: 30%;
+        width: 130%;
+    }  
+    .container-main-1-6-img-1 {
+        margin-bottom: 15%;
+    }
+    .container-main-2-top h3 {
+        font-size: 24px;
+    }
+    .container-main-2-bottom {
+        display: block;
+    }
+    .container-main-3-3{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .container-main-3-3 img{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .container-main-4-4--box {
+        width: 100%;
+        margin-top: 25%;
+    }
+    .container-main-4-4 {
+        display: block;
+    }
+    .container-main-2-bottom-1 img,
+    .container-main-2-bottom-2 img, 
+    .container-main-2-bottom-3 img {
+        width: 100%;
+    }
+    .container-main-2-bottom-1 p, 
+    .container-main-2-bottom-2 p, 
+    .container-main-2-bottom-3 p {
+        font-size: 20px;
+    }
+    .container-main-3-6 img {
+        margin-left: 0%;
+        width: 90%;
+    }
+    .container-main-3-1,
+    .container-main-3-2,
+    .container-main-3-3,
+    .container-main-3-6{
+        margin-left: 12%;
+    }
+    .container-main-4-2,
+    .container-main-4-3{
+        width: 100%;
+    }
+    .container-main-4-4 {
+        display: grid;
+        grid-template-rows: repeat(auto, auto);
+        grid-template-areas:
+            "bmmm"
+            "ammm"
+            "cmmm";
+    }
+    .box-1 {
+        grid-area: ammm;
+    }
+    .box-2 {
+        grid-area: bmmm;
+    }
+    .box-3 {
+        grid-area: cmmm;
+    }
+}

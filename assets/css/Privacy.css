@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+:root {
+    --color-Ellipse-24: #EDD008;
+    --color-Ellipse-18: #10CC9C;
+    --color-Ellipse-19: #00B2A0;
+    --color-Ellipse-20: #00979B;
+    --color-Ellipse-21: #007B8C;
+    --color-Ellipse-22: #216175;
+    --color-Ellipse-23: #2F4858;
+}
+/* main */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    padding: 0 120px;
+    padding-top: 120px;
+    padding-bottom: 229px;
+}
+
+.container-main-1 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.container-main-1 h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.container-main-1 p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+@media screen and (max-width: 801px){
+    .container-main {
+        padding: 10% 7%;
+        padding-bottom: 20%;
+    }
+    
+    .container-main-1 {
+        width: 100%;
+    }
+    .container-main-1 h3 {
+        font-size: 24px;
+    } 
+}
