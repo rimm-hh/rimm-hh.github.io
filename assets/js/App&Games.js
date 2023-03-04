@@ -104,6 +104,41 @@ back.addEventListener("mousemove", (e) => {
     back.scrollLeft = scrollLeft - walk;
 });
 
+// 
+
+back.addEventListener("mousedown", (e) => {
+    isDown = true;
+    startX = e.pageX - back.offsetLeft;
+    scrollLeft = back.scrollLeft;
+});
+
+back.addEventListener("touchstart", (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - back.offsetLeft;
+    scrollLeft = back.scrollLeft;
+});
+
+back.addEventListener("mouseleave", () => {
+    isDown = false;
+});
+
+back.addEventListener("touchend", () => {
+    isDown = false;
+});
+
+back.addEventListener("mouseup", () => {
+    isDown = false;
+});
+
+back.addEventListener("touchmove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - back.offsetLeft;
+    const walk = (x - startX) * 1;
+    back.scrollLeft = scrollLeft - walk;
+});
+
+
 // show 2 pages
 
 window.onresize = function () {
