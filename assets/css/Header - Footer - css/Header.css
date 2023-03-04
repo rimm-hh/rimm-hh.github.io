@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+:root {
+    --color-Ellipse-24: #EDD008;
+    --color-Ellipse-18: #10CC9C;
+    --color-Ellipse-19: #00B2A0;
+    --color-Ellipse-20: #00979B;
+    --color-Ellipse-21: #007B8C;
+    --color-Ellipse-22: #216175;
+    --color-Ellipse-23: #2F4858;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    src: url("../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+    src: url("../../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("ttf"),
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container-header {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , 0);
+    z-index: 1100;
+    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.148);
+}
+
+.top-header {
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-Ellipse-23);
+}
+
+.bottom-header {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    z-index: 5;
+    transition: 0.2s;
+}
+
+.logo-header {
+    margin-left: 8.5%;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.logo-header a{
+    display: grid;
+    place-items: center;
+}
+
+.logo-header-2 {
+    display: none;
+}
+.logo-header:hover .logo-header-1 {
+    display: none;
+}
+.logo-header:hover .logo-header-2 {
+    display: block;
+}
+
+.menu-ul {
+    display: flex;
+    column-gap: 40px;
+    font-size: 16px;
+    position: relative;
+}
+
+.menu-ul>li {
+    font-weight: 600;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.serv-menu {
+    position: absolute;
+    z-index: 1;
+    top: 42px;
+    left: 318px;
+    padding: 16px;
+    background-color: white;
+    border-top: 4px solid var(--color-Ellipse-18);
+    box-shadow: 0px 2px 5px 2px rgba(116, 116, 116, 0.233);;
+}
+.serv-menu li:nth-child(1) {
+    padding-bottom: 10px;
+}
+
+.how-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 42px;
+    left: 435px;
+    padding: 16px;
+    background-color: white;
+    border-top: 4px solid var(--color-Ellipse-18);
+    box-shadow: 0px 2px 5px 2px rgba(116, 116, 116, 0.233);
+}
+.how-menu li:nth-child(1) {
+    padding-bottom: 10px;
+}
+
+.btn-serv:hover ,
+.btn-how:hover {
+    text-decoration: none;
+}
+
+.chevron-down {
+    font-size: 10px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+.container-header-mobile {
+    display: none;
+}
+
+.container-menu-header-mobile {
+    display: none;
+}
+
+.profile {
+    padding-right: 8.5%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+@media (max-width:1120px) {
+    header {
+        height: 9vw;
+    }
+    .bottom-header {
+        height: 5.5vw;
+    }
+
+    .logo-header {
+        padding-right: 2vw;
+    }
+
+    .logo-header img {
+        width: 17vw;
+    }
+
+    .menu-ul {
+        display: flex;
+        column-gap: 2vw;
+        font-size: 1.5vw;
+    }
+
+    .profile {
+        margin-right: 5vw;
+        padding: 0;
+
+        font-size: 2vw;
+    }
+
+    .serv-menu {
+        top: 3.8vw;
+        left: 26vw;
+        padding: 1.3vw;
+    }
+
+    .how-menu {
+        top: 3.8vw;
+        left: 35.5vw;
+        padding: 1.3vw;
+    }
+}
+
+@media (max-width:500px) {
+    header {
+        height: 92px;
+    }
+    .container-header {
+        display: none;
+    }
+
+    .container-header-mobile {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .top-header-mobile {
+        width: 100%;
+        height: 44px;
+        background-color: var(--color-Ellipse-23);
+    }
+
+    .bootom-header-mobile {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 32px;
+    }
+
+    .bar-header {
+        font-size: 27px;
+    }
+
+    .x-mark-header {
+        font-size: 29px;
+        padding-right: 5px;
+    }
+
+    .user-header {
+        font-size: 27px;
+    }
+
+    .container-menu-header-mobile {
+        width: 100%;
+        height: 840px;
+        position: absolute;
+        z-index: 5;
+        top: 92px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        right: 100%;
+        transition: 1s;
+    }
+
+    .top-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 140px;
+    }
+
+    .menu-mobile-ul li {
+        padding: 28px 32px;
+        border-top: 1px solid black;
+        font-weight: 700;
+    }
+    .menu-mobile-ul li:hover {
+        text-decoration: none;
+    }
+
+    .menu-mobile-ul li:nth-child(1) {
+        padding-top: 0;
+        border-top: none;
+    }
+
+    .serv-menu-mobile {
+        margin-bottom: 15px;
+    }
+
+    .serv-menu-mobile li {
+        border: none;
+        padding: 8px 32px;
+        text-decoration: none;
+    }
+
+    .how-menu-mobile li {
+        border: none;
+        padding: 8px 32px;
+    }
+
+    .bottom-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 140px 32px;
+        row-gap: 20px;
+    }
+
+    .menu-mobile-btn-Create-Medical-Profile {
+        width: 236px;
+        height: 44px;
+        border: 3px solid var(--color-Ellipse-20);
+        color: var(--color-Ellipse-20);
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-mobile-btn-Create-Medical-Profile:hover {
+        background-color: var(--color-Ellipse-20);
+        color: white;
+    }
+
+    .menu-mobile-Know-More {
+        text-decoration: underline;
+        font-weight: 700;
+    }
+}
